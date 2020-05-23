@@ -1,0 +1,3 @@
+if [ -x "$(command -v npm)" ]; then
+  source <(npm completion)
+fi

@@ -1,0 +1,11 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
+[pull]
+	rebase = true
+[push]
+	default = simple
+[include]
+	path = ~/.gitconfig.local
