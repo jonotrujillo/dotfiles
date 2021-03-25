@@ -1,18 +1,17 @@
 #!/usr/bin/env bash
-#
-# Homebrew setup
-# Mostly taken from https://mths.be/dotfiles
 
-# Make sure we're using the latest Homebrew
+# https://github.com/mathiasbynens/dotfiles/blob/main/brew.sh
+
+# make sure we're using the latest Homebrew
 brew update
 
-# Upgrade any already-installed formulae
+# upgrade any already-installed formulae
 brew upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
 
-# Install other useful binaries
+# install other useful binaries
 brew install fzf
 brew install git
 brew install node
@@ -22,13 +21,13 @@ brew install vim
 brew install yarn
 brew install z
 
-# Install fonts
+# install fonts
 brew tap homebrew/cask-fonts
 brew install font-input
 
-# Install drivers
+# install drivers
 brew tap homebrew/cask-drivers
 brew install logitech-options
 
-# Remove outdated versions
+# remove outdated versions
 brew cleanup

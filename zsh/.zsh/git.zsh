@@ -8,7 +8,7 @@ alias gd="git diff"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gs="git status"
 
-# Git branch fuzzy search checkout
+# git branch fuzzy search checkout
 # https://coderwall.com/p/ba8afa/git-branch-fuzzy-search-checkout
 fbr () {
   git fetch

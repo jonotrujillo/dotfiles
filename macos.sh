@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-#
-# OS X setup
-# Mostly taken from https://mths.be/dotfiles
+
+# https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
