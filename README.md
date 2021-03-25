@@ -1,20 +1,20 @@
 # Dotfiles
 
-> My development setup.
-
 ## Prerequisites
 
-To use these dotfiles, you must make zsh your default shell.
+- zsh should be your default shell.
 
-```sh
-chsh -s $(which zsh)
-```
+  ```sh
+  chsh -s $(which zsh)
+  ```
 
-Additionally, [stow](https://www.gnu.org/software/stow/) is required to manage the dotfiles. My preferred way to install stow is using [homebrew](https://brew.sh/).
+- [stow](https://www.gnu.org/software/stow/) is required to manage the dotfiles. My preferred way to install stow is using homebrew:
 
-```sh
-brew install stow
-```
+  ```sh
+  brew install stow
+  ```
+
+- [pure](https://github.com/sindresorhus/pure) prompt should be installed.
 
 ## Installing
 
@@ -39,5 +39,3 @@ Moreover, you can also uninstall packages with stow.
 ```sh
 stow -D git
 ```
-
-[Nice](http://www.poorlydrawnlines.com/comic/its-been-nice/).
