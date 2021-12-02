@@ -2,29 +2,12 @@
 
 ## Prerequisites
 
-- Make `zsh` the default shell:
-
-  ```sh
-  chsh -s $(which zsh)
-  ```
-
-- Install [homebrew](https://brew.sh)
-
-- Install [stow](https://www.gnu.org/software/stow/):
-
-  ```sh
-  brew install stow
-  ```
-
-- Install [pure](https://github.com/sindresorhus/pure):
-
-  ```sh
-  brew install pure
-  ```
+- Make `zsh` the default shell: `chsh -s $(which zsh)`
+- Install [`homebrew`](https://brew.sh)
+- Install [`stow`](https://www.gnu.org/software/stow/): `brew install stow`
+- Install [`pure`](https://github.com/sindresorhus/pure): `brew install pure`
 
 ## Installing
-
-To install the dotfiles, run:
 
 ```sh
 git clone https://github.com/jonotrujillo/dotfiles.git ~/.dotfiles
@@ -32,7 +15,9 @@ cd ~/.dotfiles
 stow zsh
 ```
 
-Packages are managed with stow. For example, to install the `git` package, run:
+## Managing Dotfiles
+
+Dotfiles are managed with `stow`. To install a dotfiles folder, for example `/git`, run:
 
 ```sh
 stow git

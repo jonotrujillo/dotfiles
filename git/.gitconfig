@@ -1,21 +1,17 @@
 [core]
-  editor = vim
-  excludesfile = ~/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [pull]
-  rebase = true
+	rebase = true
 [push]
-  default = simple
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  process = git-lfs filter-process
-  required = true
-  smudge = git-lfs smudge -- %f
+	autoSetupRemote = true
+	default = simple
 [init]
-  defaultBranch = main
+	defaultBranch = main
 [user]
-  email = 313951+jonotrujillo@users.noreply.github.com
-  name = Jonathan Trujillo
+	email = 313951+jonotrujillo@users.noreply.github.com
+	name = Jonathan Trujillo
 [include]
-  path = ~/.gitconfig.local
+	path = ~/.gitconfig.local

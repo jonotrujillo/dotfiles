@@ -1,4 +1,4 @@
-if [ -f "/usr/local/etc/profile.d/z.sh" ]
+if [ -f "/opt/homebrew/etc/profile.d/z.sh" ]
 then
-  . /usr/local/etc/profile.d/z.sh
+  . /opt/homebrew/etc/profile.d/z.sh
 fi
