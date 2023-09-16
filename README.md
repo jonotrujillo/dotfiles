@@ -5,7 +5,6 @@
 - Make `zsh` the default shell: `chsh -s $(which zsh)`
 - Install [`homebrew`](https://brew.sh)
 - Install [`stow`](https://www.gnu.org/software/stow/): `brew install stow`
-- Install [`pure`](https://github.com/sindresorhus/pure): `brew install pure`
 
 ## Installing
 
