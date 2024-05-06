@@ -11,7 +11,7 @@
 [init]
 	defaultBranch = main
 [user]
-	email = 313951+jonotrujillo@users.noreply.github.com
+	email = git@jonathantrujillo.com
 	name = Jonathan Trujillo
 [include]
 	path = ~/.gitconfig.local
