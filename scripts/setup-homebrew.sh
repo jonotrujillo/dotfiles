@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# add taps
-brew tap homebrew/cask-fonts
-brew tap homebrew/cask-versions
-
-# install formulas
 brew install coreutils
 brew install fnm
 brew install font-input
