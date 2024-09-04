@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 brew install coreutils
+brew install delta
 brew install fnm
 brew install font-input
 brew install fzf
