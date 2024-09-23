@@ -6,7 +6,6 @@ brew install fnm
 brew install font-input
 brew install fzf
 brew install git
-brew install logi-options+
 brew install node
 brew install stow
 brew install vim
