@@ -11,3 +11,4 @@ brew install stow
 brew install vim
 brew install z
 brew install zsh
+brew install zsh-completions

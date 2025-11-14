@@ -1,3 +1,3 @@
-if [[ -f "/opt/homebrew/etc/profile.d/z.sh" ]]; then
-  . /opt/homebrew/etc/profile.d/z.sh
+if [[ -f "$(brew --prefix)/etc/profile.d/z.sh" ]]; then
+  . $(brew --prefix)/etc/profile.d/z.sh
 fi

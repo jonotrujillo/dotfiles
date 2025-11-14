@@ -1,4 +1,4 @@
-PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH"
 
 if [[ -x "$(command -v gls)" ]]; then
   alias ls="gls --color"
