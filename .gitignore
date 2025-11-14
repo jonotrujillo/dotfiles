@@ -1,3 +1,5 @@
+# do not track local git config file
 git/.gitconfig.local
-zsh/.zsh/local/*
-!zsh/.zsh/local/.gitkeep
+
+# do not track local zsh config files
+zsh/.zsh/**/*.local.zsh

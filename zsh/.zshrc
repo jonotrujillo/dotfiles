@@ -1,1 +1,3 @@
-for config (~/.zsh/**/*.zsh) source $config
+for config in ~/.zsh/**/*.zsh; do
+  source "$config"
+done
