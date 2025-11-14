@@ -1,1 +1,1 @@
-export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+HOMEBREW_CASK_OPTS='--appdir=/Applications'
