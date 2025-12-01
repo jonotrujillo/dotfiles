@@ -14,6 +14,6 @@ unsetopt CLOBBER            # Do not overwrite existing files with > and >>.
                             # Use >! and >>! to bypass.
 
 alias l='ls -lah'
-
-# 1 ... 9 changes the directory to the n previous one.
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
