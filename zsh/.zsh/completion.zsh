@@ -3,7 +3,7 @@
 # - Oh My Zsh: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/completion.zsh
 
 if type brew &>/dev/null; then
-  FPATH="$(brew --prefix)/share/zsh-completions:$FPATH"
+  FPATH="$BREW_PREFIX/share/zsh-completions:$FPATH"
 
   autoload -Uz compinit
   compinit
