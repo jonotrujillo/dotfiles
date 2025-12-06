@@ -2,12 +2,12 @@
 # - Prezto: https://github.com/sorin-ionescu/prezto/blob/master/modules/completion/init.zsh
 # - Oh My Zsh: https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/completion.zsh
 
-if type brew &>/dev/null; then
-  FPATH="$BREW_PREFIX/share/zsh-completions:$FPATH"
-
-  autoload -Uz compinit
-  compinit
+if [[ -d "$HOMEBREW_PREFIX/share/zsh-completions" ]]; then
+  FPATH="$HOMEBREW_PREFIX/share/zsh-completions:$FPATH"
 fi
+
+autoload -Uz compinit
+compinit
 
 setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
 setopt ALWAYS_TO_END        # Move cursor to the end of a completed word.
