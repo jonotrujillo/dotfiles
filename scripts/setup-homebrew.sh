@@ -9,6 +9,6 @@ brew install git
 brew install node
 brew install stow
 brew install vim
-brew install z
+brew install zoxide
 brew install zsh
 brew install zsh-completions
