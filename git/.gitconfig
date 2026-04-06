@@ -9,6 +9,15 @@
 [push]
 	autoSetupRemote = true
 	default = simple
+	force = force-with-lease
+[fetch]
+	prune = true
+[merge]
+	conflictstyle = zdiff3
+[rebase]
+	autosquash = true
+[branch]
+	sort = -committerdate
 [init]
 	defaultBranch = main
 [user]
