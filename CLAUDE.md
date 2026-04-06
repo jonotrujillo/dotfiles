@@ -42,6 +42,7 @@ bash scripts/setup-dotfiles.sh   # stow all config packages
 
 - Separate commit per logical change — do not bundle unrelated changes
 - Commit messages: `scope: description` (e.g. `zsh: add gds alias`)
+- No co-author attribution in commit messages
 
 ## Zsh conventions
 
