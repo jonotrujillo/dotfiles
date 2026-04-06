@@ -14,5 +14,11 @@
 [user]
 	email = git@jonathantrujillo.com
 	name = Jonathan Trujillo
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+[interactive]
+	diffFilter = delta --color-only
 [include]
 	path = ~/.gitconfig.local
