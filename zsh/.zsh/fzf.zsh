@@ -1,3 +1,11 @@
-if [[ -f "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh" ]]; then
-  source "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh"
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
+
+if [[ -x "$(command -v fd)" ]]; then
+  export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git"
+fi
+
+if [[ -x "$(command -v fzf)" ]]; then
+  source <(fzf --zsh)
 fi
