@@ -11,7 +11,7 @@
 
 ```bash
 brew bundle              # install all packages
-bash scripts/setup.sh   # stow all config packages
+bash scripts/setup-dotfiles.sh   # stow all config packages
 ```
 
 ## Structure
@@ -19,7 +19,7 @@ bash scripts/setup.sh   # stow all config packages
 - `ghostty/`, `git/`, `vim/`, `zsh/` — stow packages, each maps to `~/`
 - `zsh/.zsh/` — modular zsh config, one concern per file
 - `Brewfile` — package management, run separately with `brew bundle`
-- `scripts/` — standalone scripts including `setup.sh`, not stowed
+- `scripts/` — standalone scripts including `setup-dotfiles.sh`, not stowed
 
 ## Stow
 
@@ -53,7 +53,7 @@ bash scripts/setup.sh   # stow all config packages
 
 - Homebrew `PATH` setup is in `.zprofile` (login shell), not `.zshrc` — must run before any tool is referenced
 - Files ending in `.local.zsh` are machine-specific; sourced if present but never tracked in git
-- `scripts/setup.sh` does not install Homebrew — that is a prerequisite
+- `scripts/setup-dotfiles.sh` does not install Homebrew — that is a prerequisite
 
 ## What to avoid
 
