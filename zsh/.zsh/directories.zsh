@@ -13,7 +13,7 @@ setopt EXTENDED_GLOB        # Use extended globbing syntax.
 unsetopt CLOBBER            # Do not overwrite existing files with > and >>.
                             # Use >! and >>! to bypass.
 
-alias l='ls -lah'
+alias l='eza -lah --git'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
