@@ -16,7 +16,7 @@ bash scripts/setup-dotfiles.sh   # stow all config packages
 
 ## Structure
 
-- `ghostty/`, `git/`, `vim/`, `zsh/` — stow packages, each maps to `~/`
+- `claude/`, `ghostty/`, `git/`, `vim/`, `zsh/` — stow packages, each maps to `~/`
 - `zsh/.zsh/` — modular zsh config, one concern per file
 - `Brewfile` — package management, run separately with `brew bundle`
 - `scripts/` — standalone scripts including `setup-dotfiles.sh`, not stowed
