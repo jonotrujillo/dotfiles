@@ -35,6 +35,6 @@ function precmd() {
 
 PROMPT='
 %B%F{blue}%~%f%b $(git_prompt_info)
-%% '
+%B%F{cyan}❯%f%b '
 
 RPROMPT='%F{242}${_cmd_time}%f'
