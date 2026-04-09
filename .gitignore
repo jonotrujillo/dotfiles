@@ -1,5 +1,8 @@
 # do not track local git config file
 git/.gitconfig.local
 
+# do not track local zsh profile
+zsh/.zprofile
+
 # do not track local zsh config files
 zsh/.zsh/**/*.local.zsh
