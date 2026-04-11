@@ -8,7 +8,7 @@
 ## Installation
 
 1. `git clone https://github.com/jonotrujillo/dotfiles.git ~/.dotfiles`
-2. `cd ~/.dotfiles && ./setup.sh`
+2. `cd ~/.dotfiles && ./scripts/setup-dotfiles.sh`
 
 ## Packages
 

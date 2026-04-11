@@ -19,7 +19,10 @@ bash scripts/setup-dotfiles.sh   # stow all config packages
 - `claude/`, `ghostty/`, `git/`, `vim/`, `zsh/` — stow packages, each maps to `~/`
 - `zsh/.zsh/` — modular zsh config, one concern per file
 - `Brewfile` — package management, run separately with `brew bundle`
-- `scripts/` — standalone scripts including `setup-dotfiles.sh`, not stowed
+- `scripts/` — standalone scripts, not stowed:
+  - `setup-dotfiles.sh` — stow all config packages
+  - `update-brew.sh` — update, upgrade, and cleanup Homebrew
+  - `reset-dock-and-launchpad.sh` — reset macOS dock and launchpad
 
 ## Stow
 
@@ -31,6 +34,7 @@ bash scripts/setup-dotfiles.sh   # stow all config packages
 - Machine-specific config goes in `.local` files (e.g. `~/.zshrc.local`, `~/.gitconfig.local`)
 - These files are gitignored and never tracked
 - Tracked configs source their `.local` counterpart if it exists
+- Never reference local file names or their contents — they are private and sensitive
 
 ## Security
 
@@ -52,7 +56,7 @@ bash scripts/setup-dotfiles.sh   # stow all config packages
 
 ## Gotchas
 
-- Homebrew `PATH` setup is in `.zprofile` (login shell), not `.zshrc` — must run before any tool is referenced
+- `.zprofile` is gitignored — each machine has its own local version for PATH setup
 - Files ending in `.local.zsh` are machine-specific; sourced if present but never tracked in git
 - `scripts/setup-dotfiles.sh` does not install Homebrew — that is a prerequisite
 
