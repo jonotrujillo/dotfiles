@@ -1,0 +1,2 @@
+# do not track local git config file
+git/.gitconfig.local
