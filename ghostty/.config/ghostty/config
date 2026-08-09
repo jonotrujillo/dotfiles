@@ -1,0 +1,26 @@
+# cursor
+cursor-style = block
+shell-integration-features = no-cursor
+
+# font
+font-family = Input Mono
+font-style = Medium
+font-size = 13
+font-thicken = true
+adjust-cell-width = -5%
+
+# macos
+macos-option-as-alt = true
+macos-titlebar-style = native
+
+# mouse
+mouse-hide-while-typing = true
+
+# theme
+theme = light:Xcode Light,dark:Alien Blood
+
+# window
+window-padding-balance = true
+window-padding-x = 12
+window-padding-y = 12
+window-save-state = always
