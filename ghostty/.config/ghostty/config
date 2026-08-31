@@ -1,6 +1,10 @@
+# Some settings below adapted from Omarchy's ghostty config
+# https://github.com/omacom/omarchy/blob/quattro/config/ghostty/config
+
 # cursor
 cursor-style = block
-shell-integration-features = no-cursor
+cursor-style-blink = false
+shell-integration-features = no-cursor,ssh-env
 
 # font
 font-family = Input Mono
@@ -14,12 +18,21 @@ macos-titlebar-style = native
 
 # mouse
 mouse-hide-while-typing = true
+mouse-scroll-multiplier = 0.95
 
 # theme
 theme = light:Xcode Light,dark:Alien Blood
 
 # window
 window-padding-balance = true
-window-padding-x = 12
-window-padding-y = 12
+window-padding-x = 13
+window-padding-y = 13
 window-save-state = always
+confirm-close-surface = false
+resize-overlay = never
+
+# keybindings
+# Send Shift+Enter as CSI-u so TUIs can distinguish it from Enter.
+keybind = shift+enter=csi:13;2u
+# Legacy encoding sends Alt+Shift+Enter the same as Alt+Enter; send CSI-u so tmux can match M-S-Enter.
+keybind = alt+shift+enter=csi:13;4u
