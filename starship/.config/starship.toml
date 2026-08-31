@@ -1,3 +1,6 @@
+# From Omarchy's starship config
+# https://github.com/omacom/omarchy/blob/quattro/config/starship.toml
+
 add_newline = true
 command_timeout = 200
 format = "[$directory$git_branch$git_status]($style)$character"
