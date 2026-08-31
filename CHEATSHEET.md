@@ -77,41 +77,49 @@ Quick reference for the aliases, functions, and keybindings set up across this r
 
 ## Tmux (`tmux/.tmux.conf`)
 
-Prefix: `Ctrl+b`
+Prefix: `Ctrl+Space` (primary), `Ctrl+b` (fallback).
+
+### Config and help
+
+| Hotkey       | Function                      |
+| ------------ | ----------------------------- |
+| Prefix + `q` | Reload configuration          |
+| Prefix + `?` | Show tmux keybindings (popup) |
 
 ### Panes
 
-| Hotkey             | Function                             |
-| ------------------ | ------------------------------------ |
-| Prefix + `%`       | Split pane vertically (left/right)   |
-| Prefix + `"`       | Split pane horizontally (top/bottom) |
-| Prefix + `o`       | Switch to next pane                  |
-| Prefix + `;`       | Switch to last active pane           |
-| Prefix + arrow key | Switch to pane in that direction     |
-| Prefix + `{` / `}` | Move pane left / right               |
-| Prefix + `z`       | Toggle pane zoom                     |
-| Prefix + `x`       | Kill current pane                    |
-| Prefix + `q`       | Show pane numbers                    |
+| Hotkey                              | Function                             |
+| ----------------------------------- | ------------------------------------ |
+| `Alt+Enter`                         | Split pane vertically (top/bottom)   |
+| `Alt+Shift+Enter`                   | Split pane horizontally (left/right) |
+| `Alt+Escape`                        | Kill pane                            |
+| Prefix + `h`                        | Split pane vertically (top/bottom)   |
+| Prefix + `v`                        | Split pane horizontally (left/right) |
+| Prefix + `x`                        | Kill pane                            |
+| `Ctrl+Alt+Left/Right/Up/Down`       | Focus pane in that direction         |
+| `Ctrl+Alt+Shift+Left/Down/Up/Right` | Resize pane by 5 cells               |
 
 ### Windows
 
-| Hotkey           | Function                   |
-| ---------------- | -------------------------- |
-| Prefix + `c`     | Create new window          |
-| Prefix + `,`     | Rename current window      |
-| Prefix + `n`     | Next window                |
-| Prefix + `p`     | Previous window            |
-| Prefix + `0`–`9` | Switch to window by number |
-| Prefix + `w`     | List windows               |
-| Prefix + `&`     | Kill current window        |
+| Hotkey                               | Function                   |
+| ------------------------------------ | -------------------------- |
+| Prefix + `r`                         | Rename current window      |
+| Prefix + `c`                         | Create new window          |
+| Prefix + `k`                         | Kill current window        |
+| `Alt+1`–`Alt+9`                      | Switch to window by number |
+| `Alt+Left` / `Alt+Right`             | Previous / next window     |
+| `Alt+Shift+Left` / `Alt+Shift+Right` | Move window left / right   |
 
 ### Sessions
 
-| Hotkey       | Function            |
-| ------------ | ------------------- |
-| Prefix + `d` | Detach from session |
-| Prefix + `s` | List sessions       |
-| Prefix + `$` | Rename session      |
+| Hotkey                | Function                |
+| --------------------- | ----------------------- |
+| Prefix + `R`          | Rename session          |
+| Prefix + `C`          | Create session          |
+| Prefix + `K`          | Kill session            |
+| Prefix + `P`          | Previous session        |
+| Prefix + `N`          | Next session            |
+| `Alt+Up` / `Alt+Down` | Previous / next session |
 
 Outside of tmux:
 
@@ -121,19 +129,10 @@ Outside of tmux:
 | `tmux attach -t <name>` | Attach to a named session  |
 | `tmux ls`               | List all sessions          |
 
-### Copy mode (default, non-vi)
+### Copy mode (vi-style)
 
 | Hotkey       | Function                          |
 | ------------ | --------------------------------- |
 | Prefix + `[` | Enter copy mode                   |
-| `Space`      | Start selection                   |
-| `Enter`      | Copy selection and exit copy mode |
-| Prefix + `]` | Paste most recent buffer          |
-
-### General
-
-| Hotkey       | Function              |
-| ------------ | --------------------- |
-| Prefix + `:` | Open command prompt   |
-| Prefix + `?` | List all key bindings |
-| Prefix + `t` | Show clock            |
+| `v`          | Begin selection                   |
+| `y`          | Copy selection and exit copy mode |
