@@ -29,6 +29,7 @@ Not stowed, run directly from the repo:
 
 - `scripts/setup-dotfiles.sh` — stow all config packages
 - `scripts/update-brew.sh` — update, upgrade, and clean up Homebrew
+- `scripts/configure-input.sh` — set key repeat, tracking speed, and Das Keyboard
 - `scripts/reset-dock-and-launchpad.sh` — reset the macOS Dock and Launchpad
 
 ## Local overrides
