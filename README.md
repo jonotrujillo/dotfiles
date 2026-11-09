@@ -37,6 +37,7 @@ Not stowed, run directly from the repo:
 Machine-specific config is gitignored automatically:
 
 - `git/.gitconfig.local` — machine-specific git identity, included from `.gitconfig`
+- `scripts/**/*.local.sh` — machine-specific scripts, run directly from the repo
 - `zsh/.zsh/**/*.local.zsh` — any file ending in `.local.zsh`, picked up by `.zshrc`
 
 > [!TIP]
