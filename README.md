@@ -17,6 +17,7 @@ Personal macOS dotfiles, managed with [GNU Stow](https://www.gnu.org/software/st
 
 Each top-level folder is a Stow package, symlinked into `$HOME`:
 
+- `agents/` — global AI agent instructions (`AGENTS.md`, linked as `~/.claude/CLAUDE.md` and `~/.gemini/GEMINI.md`) and Claude Code settings
 - `git/` — `.gitconfig`, global `.gitignore`
 - `ghostty/` — terminal config
 - `starship/` — prompt config
