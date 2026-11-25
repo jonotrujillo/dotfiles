@@ -74,3 +74,28 @@ Quick reference for the aliases, functions, and keybindings set up across this r
 | Shortcut       | Function                                |
 | -------------- | --------------------------------------- |
 | `history-stat` | Show your most-frequently-used commands |
+
+## tmux (`tmux/.config/tmux/tmux.conf`)
+
+Prefix is `Ctrl+A` (or `Ctrl+B`). Press `Prefix ?` inside tmux for the full list.
+
+| Shortcut                        | Function                             |
+| ------------------------------- | ------------------------------------ |
+| `Ctrl+A Ctrl+A`                 | Send a literal `Ctrl+A` to the shell |
+| `Prefix q`                      | Reload tmux config                   |
+| `Prefix ?`                      | Show keybindings in a popup          |
+| `Prefix h` / `Prefix v`         | Split pane vertically / horizontally |
+| `Alt+Enter` / `Alt+Shift+Enter` | Split pane vertically / horizontally |
+| `Prefix x` / `Alt+Esc`          | Kill pane                            |
+| `Ctrl+Alt+Arrows`               | Focus pane                           |
+| `Ctrl+Alt+Shift+Arrows`         | Resize pane                          |
+| `Prefix c` / `Prefix r`         | Create / rename window               |
+| `Prefix k`                      | Kill window                          |
+| `Alt+1..9`                      | Switch to window                     |
+| `Alt+Left` / `Alt+Right`        | Previous / next window               |
+| `Alt+Shift+Left` / `Right`      | Move window left / right             |
+| `Prefix C` / `Prefix R`         | Create / rename session              |
+| `Prefix K`                      | Kill session                         |
+| `Prefix P` / `Prefix N`         | Previous / next session              |
+| `Alt+Up` / `Alt+Down`           | Previous / next session              |
+| `v` / `y` (copy mode)           | Begin selection / copy and exit      |

@@ -20,6 +20,7 @@ Each top-level folder is a Stow package, symlinked into `$HOME`:
 - `git/` — `.gitconfig`, global `.gitignore`
 - `ghostty/` — terminal config
 - `starship/` — prompt config
+- `tmux/` — terminal multiplexer config, adapted from Omarchy
 - `vim/` — minimal `.vimrc`
 - `zsh/` — modular shell config
 
